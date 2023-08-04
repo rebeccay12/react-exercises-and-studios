@@ -1,3 +1,6 @@
+import styles from './Description.module.css';
+import React from'react';
+
 function RecipeAuthor() {
     let authorLink = "https://holycowvegan.net/vegan-buttermilk-biscuits/"
     let authorPhoto = "https://holycowvegan.net/wp-content/uploads/2022/03/vaishy-profile-pic-180x180.jpg"
@@ -12,3 +15,20 @@ function RecipeAuthor() {
    </div>
 );
 }
+
+
+
+class RecipeDescription extends React.Component {
+    render() {
+     
+     return (<div> 
+        <div>
+           <h1>Recipe Title</h1>
+           <p>Short recipe description</p>
+        </div>
+        <RecipeAuthor />
+     </div>)
+    }
+}
+
+export default RecipeDescription;
