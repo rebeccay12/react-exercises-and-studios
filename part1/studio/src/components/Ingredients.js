@@ -1,4 +1,6 @@
-function RecipeIngredients() {
+import styles from './Ingredients.module.css';
+
+export default function RecipeIngredients() {
     let ingredients = ["unbleached all-purpose flour", "baking powder + baking soda", "vegan butter", "non-dairy milk", "apple cider vinegar"]
     return (   
     <div>

@@ -1,34 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 
-//import styles from './Description.js';
 
 import RecipeDescription from '../src/components/Description.js';
+import RecipeIngredients from '../src/components/Ingredients.js';
+import RecipePhoto from './components/Photos';
 
 function App() {
   return (
     <div className="App">
       <div>
-          <RecipeDescription />
-      </div>
+          <RecipePhoto />
+      <div>
+        <RecipeDescription />
+        <RecipeIngredients />
+        </div>
     </div>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-  );
+   </div> )
 }
 
 export default App;
